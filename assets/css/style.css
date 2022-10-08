@@ -58,8 +58,7 @@ body{
 	color: var(--negro);
     display: flex;
     right: -100%;
-	transition: right .5s linear;
-	
+	transition: right .5s linear;		
 }
 
 .n20 {
@@ -67,6 +66,7 @@ body{
 	color:var(--negro);	
 	text-decoration: none;
 }
+
 .n30{
 	list-style: none;
 }
@@ -281,12 +281,13 @@ body{
 	margin: auto;
 }
 
+/* -----------------FOOTER------------------------------*/
+
 .contacto-fin{
 	padding-top: 5rem;
 	display: flex;
 	flex-direction: column;
 	text-align: center;
-
 }
 
 .foo-cont{
@@ -297,8 +298,8 @@ body{
 .cont-img{
 	width: 50px;
     padding: 7px;
-	background-color: var(--crema);
 	border-radius: 50%;
+	background-color: var(--crema);	
 }
 
 .c1{
@@ -307,10 +308,6 @@ body{
 
 .c2{
 	color:rgb(220, 215, 215) ;
-}
-
-.cont-img{
-	border-radius: 25%;
 }
 
 /* ----------------------NAV-------------------------*/
@@ -326,6 +323,7 @@ body{
         min-height: auto;
         justify-content:end;
         background-color: transparent;
+		
     }
 
 	.n20 .n30 {
@@ -350,13 +348,17 @@ body{
 		font-size: 11px;
 		width: 110px;
 		text-align: right;
-
 	}
 }
 
 /* ---------------------INFO--------------------------*/
 
 @media screen and (min-width: 760px ) {
+
+h1{
+	font-size: 50px;
+}
+
 .info-pers{
 	 display: flex;
 	 flex-direction: row;
@@ -384,9 +386,6 @@ margin-right: 2rem;
 .contacto-nombre{
 	height: 180px;
 }
-h1{
-	font-size: 50px;
-}
 }
 
 /* ------------------MAIN-----------------------------*/
@@ -409,9 +408,10 @@ h1{
 		display: flex;
 		flex-direction: row;	
 		gap: 2rem;
-	}}
+	}
+}
 
-/* -----------------ASIDE------------------------------*/	
+/* -----------------FOOTER------------------------------*/	
 
 @media screen and (min-width: 760px ){
 	
@@ -430,3 +430,8 @@ h1{
 		font-size: 8px;
 		color:rgb(220, 215, 215) ;	
 	}	
+    
+	.cont-img{
+		border-radius: 25%;
+	}
+}
